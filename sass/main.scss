@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+// Brand Colors
+$pink: #FC5B73;
+$red: #E02C51;
+$blue: #20a2ff;
+$green: #46C48C;
+$aqua: #01D1BB;
+$aqua-o: #01B3A1;
+$one-light-gray: #91959B;
+$one-light-blue: #7F848E;
+$one-highlight-blue: #515A6B;
+$one-med-blue: #282c34;
+$one-dark-blue: #21252B;
+$one-darkest-blue: #0e1216;
+
+// Brand Fonts
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:700');
+@import url("https://use.typekit.net/yuv5nvd.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:700,700i&display=swap');
+
+// Update Bulma's global variables
+
+// COLORS
+//  initial variables
+/*
+$black: $one-dark-blue;
+$grey-darker: $one-med-blue;
+$grey-dark: $one-med-blue;
+$grey: $one-highlight-blue;
+$grey-lighter: $one-light-blue;
+$grey-light: $one-light-gray;
+*/
+
+$primary: $aqua;
+$link: $primary;
+//$link-visited: $primary;
+
+//FONTS
+$family-sans-serif: 'Nunito',
+sans-serif;
+$family-primary: $family-sans-serif;
+$family-secondary: proxima-nova,
+'Nunito',
+sans-serif;
+$family-code: 'Ubuntu Mono',
+monospace;
+
+// SPACING
+$body-line-height: 1.8;
+
+$box-radius: 20px;
+$box-shadow: 0 6px 6px 0 #dfdfdf80,
+0 0 0 1px #dfdfdf;
+$navbar-height: 5rem;
+
+$footer-padding: 0;
+
+// ------------------------------------------------------
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
+// ------------------------------------------------------
+
+// Overwrite some rules for customization
+.my-text-white,
+.my-text-white>*,
+.my-text-white>*>* {
+    color: #ffffff !important;
+}
+
+.section.is-primary {
+    background-color: $primary;
+    color: #fff;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    strong,
+    em {
+        color: #fff;
+    }
+}
+
+strong {
+    font-weight: 700 !important;
+}
+
+a {
+    transition: 0.3s;
+}
+
+// ------------------------------------------------------
+// TEXT & FONTS - SPACING, KERNING, WEIGHT, ETC
+// ------------------------------------------------------
+.is-family-primary {
+    letter-spacing: 0px;
+}
+
+.is-family-secondary {
+    letter-spacing: 0px;
+}
+
+.subtitle {
+    line-height: 1.8 !important;
+}
+
+.is-bold-500 {
+    font-weight: 500 !important;
+}
+
+.is-bold-600 {
+    font-weight: 600 !important;
+}
+
+.is-bold-700 {
+    font-weight: 700 !important;
+}
+
+.has-extra-kerning {
+    letter-spacing: 3pt;
+}
+
+.is-uppercase {
+    text-transform: uppercase;
+}
+
+.is-lowercase {
+    text-transform: lowercase;
+}
+
+
+// ------------------------------------------------------
+// SECTIONS
+// ------------------------------------------------------
+
+// Hero
+.hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}

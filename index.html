@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- ICONS & FAVICONS -->
+    <!-- Generic
+    <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="assets/icons/favicon-57.png" sizes="57x57">
+    <link rel="icon" href="assets/icons/favicon-76.png" sizes="76x76">
+    <link rel="icon" href="assets/icons/favicon-96.png" sizes="96x96">
+    <link rel="icon" href="assets/icons/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="assets/icons/favicon-192.png" sizes="192x192">
+    <link rel="icon" href="assets/icons/favicon-228.png" sizes="228x228">  -->
+    <!-- Android 
+    <link rel="shortcut icon" sizes="196x196" href="assets/icons/favicon-196.png">  -->
+    <!-- iOS
+    <link rel="apple-touch-icon" href="assets/icons/favicon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="assets/icons/favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="assets/icons/favicon-180.png" sizes="180x180"> -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>HackNC19 App</title>
+</head>
+
+<body>
+    <div class="modal is-clipped is-active">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Please register or login to continue!</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="tabs is-centered">
+                    <ul>
+                        <li class="is-active"><a>Register</a></li>
+                        <li><a>Login</a></li>
+                    </ul>
+                </div>
+                <form action="register.php" method="POST">
+                    <div class="field">
+                        <lable class="label">Username</lable>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <lable class="label">Email Address</lable>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <lable class="label">Password</lable>
+                        <div class="control has-icons-left">
+                            <input class="input" type="password" placeholder="" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot has-text-centered">
+                <button class="button is-success">Register</button>
+            </footer>
+
+
+
+
+        </div>
+
+
+
+</body>
+
+</html>
