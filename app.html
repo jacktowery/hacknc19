@@ -27,6 +27,12 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_fcl1QycV4xI6an2V7mWvi");
+        })();
+    </script>
 
     <title>VENT</title>
 </head>
@@ -44,21 +50,41 @@
         </div>
     </div>
 
+    <div id="email-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-text-white has-text-centered">
+            <p class="has-text-white is-size-3-desktop is-size-5-touch is-family-secondary is-bold-600">
+                We've just emailed you your list of saved events.
+            </p>
+            <img id="main-logo" src="assets/svg/vent_color.svg">
+            <p class="has-text-white">Thank you for using VENT!</p>
+            <button class="button is-primary" onclick="closeEmailModal()">Keep Swiping</button>
+        </div>
+    </div>
+
     <section class="hero is-black is-fullheight has-text-centered">
         <div class="hero-head">
             <img id="main-logo" src="assets/svg/vent_color.svg">
         </div>
         <div class="hero-body">
-            <div class="container">
+            <div class="container" id="event-container">
                 <p class="title" id="event-title">Event Title</p>
                 <p class="img-container">
                     <img id="event-image" src="https://dummyimage.com/1920x1080/fff/aaa">
                 </p>
                 <div id="event-desc-container">
-                    <p id="event-datetime">Date/Time</p>
-                    <p id="event-location">Location</p>
-                </div>
+                    <p>
+                        <span class="icon is-small has-text-grey-lighter"><i class="fas fa-map-marker-alt"></i></span>
+                        &nbsp;
+                        <span id="event-datetime">Date/Time</span>
+                    </p>
+                    <p>
+                        <span class="icon is-small has-text-grey-lighter"><i class="far fa-calendar-alt"></i></span>
+                        &nbsp;
+                        <span id="event-location">Location</span>
+                    </p>
 
+                </div>
             </div>
         </div>
         <div class="hero-foot">
@@ -78,7 +104,7 @@
                 <a id="like" class="button is-white is-huge" onclick="like()">
                     <span class="icon is-medium"><i class="fas fa-thumbs-up"></i></span>
                 </a>
-                <a class="button is-light is-outlined is-medium" onclick="">
+                <a class="button is-light is-outlined is-medium" onclick="sendEmail()">
                     <span class="icon is-medium"><i class="fas fa-envelope"></i></span>
                 </a>
             </div>

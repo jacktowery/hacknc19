@@ -13,3 +13,8 @@ function closeModal() {
     let modal = document.getElementById('loading-modal');
     modal.classList = "modal";
 }
+
+function closeEmailModal() {
+    let modal = document.getElementById('email-modal');
+    modal.classList = "modal";
+}

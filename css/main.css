@@ -7430,6 +7430,12 @@ html {
     .img-container {
       width: 50%; } }
 
+#event-image {
+  border-radius: 20px; }
+
+#event-container {
+  transition: 0.25s ease-in-out; }
+
 .action-buttons {
   margin: 3em 0em; }
 
@@ -7512,3 +7518,13 @@ output {
 #load-progress {
   margin: 3rem auto;
   width: 80% !important; }
+
+#email-modal button {
+  margin-top: 2rem; }
+
+#email-modal p {
+  line-height: 1.1; }
+
+#email-modal img {
+  margin: 2rem 0;
+  scale: 3; }
