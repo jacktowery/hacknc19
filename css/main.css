@@ -7082,3 +7082,46 @@ html {
   @media screen and (min-width: 1088px) {
     .button.is-huge {
       font-size: 2.5em; } }
+
+#splash {
+  position: relative;
+  height: calc(100vh);
+  background-color: #0e1216; }
+
+.splash-logo {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -100px; }
+
+.splash-logo {
+  opacity: 0; }
+
+#splash-center-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#splash-form-title {
+  opacity: 0; }
+
+.splash-form-column {
+  opacity: 0; }
+
+#splash-form .input {
+  background-color: #0e1216 !important;
+  border-color: #01D1BB !important;
+  color: #01D1BB !important;
+  border-radius: 10px !important; }
+
+#splash-form .input::placeholder {
+  color: #7F848E !important; }

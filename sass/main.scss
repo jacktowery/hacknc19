@@ -239,3 +239,58 @@ html {
     //mobile
     font-size: 2em;
 }
+
+// ------------------------------------------------------
+// SPLASH SCREEN
+// ------------------------------------------------------
+
+#splash {
+    position: relative;
+    height: calc(100vh);
+    background-color: $one-darkest-blue;
+}
+
+.splash-logo {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+}
+
+.splash-logo {
+    opacity: 0;
+}
+
+#splash-center-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#splash-form-title {
+    opacity: 0;
+}
+
+.splash-form-column {
+    opacity: 0;
+}
+
+#splash-form .input {
+    background-color: $one-darkest-blue !important;
+    border-color: $primary !important;
+    color: $primary !important;
+    border-radius: 10px !important;
+}
+
+#splash-form .input::placeholder {
+    color: $one-light-blue !important;
+}
