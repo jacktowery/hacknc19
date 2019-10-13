@@ -28,6 +28,7 @@ $grey-darker: $one-dark-blue;
 $grey-dark: $one-dark-blue;
 $grey: $one-med-blue;
 $grey-lighter: $one-light-blue;
+$grey-light: $one-light-gray;
 
 /*
 $black: $one-dark-blue;
@@ -39,7 +40,10 @@ $grey-light: $one-light-gray;
 */
 
 $primary: $red;
-$link: $orange;
+$link: $red;
+$link-hover: $orange;
+$link-visited: $red;
+$link-focus-border: $orange;
 //$link-visited: $primary;
 
 //FONTS
@@ -366,7 +370,29 @@ output {
 }
 
 // ------------------------------------------------------
-// EMAIL MODAL
+// INFO MODAL
+// ------------------------------------------------------
+
+#info-logo {
+    width: 5rem;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.info-section {
+    margin-bottom: 3rem;
+}
+
+a#info-me {
+    color: $one-light-gray !important;
+}
+
+a#info-me:hover {
+    color: $orange !important;
+}
+
+// ------------------------------------------------------
+// ETC
 // ------------------------------------------------------
 
 .ui-loader {

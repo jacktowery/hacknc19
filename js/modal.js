@@ -18,3 +18,13 @@ function closeEmailModal() {
     let modal = document.getElementById('email-modal');
     modal.classList = "modal";
 }
+
+function showInfoModal() {
+    let modal = document.getElementById('info-modal');
+    modal.classList = "modal is-active";
+}
+
+function closeInfoModal() {
+    let modal = document.getElementById('info-modal');
+    modal.classList = "modal";
+}

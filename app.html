@@ -63,6 +63,56 @@
         </div>
     </div>
 
+    <div id="info-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-text-white has-text-centered">
+            <div class="container">
+                <div class="info-section">
+                    <img id="info-logo" src="assets/svg/vent_white.svg">
+                    <p class="has-text-primary is-size-3-desktop is-size-5-touch is-family-secondary is-bold-700">
+                        About VENT
+                    </p>
+                </div>
+                <div class="info-section">
+                    <p class="is-family-secondary is-bold-700">What is VENT?</p>
+                    <p class="">VENT searches for concerts, sporting events, and more using your GPS location and the
+                        radius
+                        you specified to search. If you see an event you're interested in, <span
+                            class="has-text-primary">swipe right</span> to save it, or <span
+                            class="has-text-primary">swipe
+                            left</span> if you're not interested. Tap the &nbsp;<span
+                            class="icon is-small has-text-primary"><i class="fas fa-envelope"></i></span>&nbsp; icon,
+                        and
+                        VENT will email you the list of events you are interested in. It's that simple!</p>
+                </div>
+                <div class="info-section">
+                    <p class="is-family-secondary is-bold-700">How Was VENT Created?</p>
+                    <p class="">VENT was created in just 24 hours for HackNC 2019, a Hackathon at UNC Chapel Hill.</p>
+                    <p>Tools used:
+                        <a href="http://bulma.io">Bulma</a>,
+                        <a href="https://developer.ticketmaster.com/">Ticketmaster Discovery API</a>,
+                        <a href="https://www.emailjs.com/">EmailJS</a>
+                    </p>
+                </div>
+                <div class="info-section">
+                    <p class="is-bold-700"><a href="https://github.com/jacktowery/hacknc19">View on GitHub</a></p>
+                    <!-- Place this tag where you want the button to render. -->
+                    <a class="github-button" href="https://github.com/jacktowery/hacknc19"
+                        data-color-scheme="no-preference: dark; light: light; dark: dark;" data-size="large"
+                        data-show-count="true" aria-label="Star jacktowery/hacknc19 on GitHub">Star</a>
+                </div>
+                <div class="info-section">
+                    <p class="has-text-grey-lighter is-size-6">Made by <a id="info-me" href="http://jacktowery.com">Jack
+                            Towery</a>
+                    </p>
+                    <p class="has-text-grey-lighter is-size-7">October 12-13, 2019</p>
+                </div>
+                <button class="modal-close is-large" aria-label="close" onclick="closeInfoModal()"></button>
+            </div>
+
+        </div>
+    </div>
+
     <section class="hero is-black is-fullheight has-text-centered">
         <div class="hero-head">
             <img id="main-logo" src="assets/svg/vent_color.svg">
@@ -96,7 +146,7 @@
                         <stop offset="1" stop-color="#ff2e5c" />
                     </linearGradient>
                 </svg>
-                <a class="button is-light is-outlined is-medium" onclick="">
+                <a class="button is-light is-outlined is-medium" onclick="showInfoModal()">
                     <span class="icon is-medium"><i class="fas fa-info"></i></span>
                 </a>
                 <a id="dislike" class="button is-white is-huge" onclick="dislike()">
@@ -114,5 +164,7 @@
 
     <script src="js/eventController.js"></script>
     <script src="js/modal.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </html>
