@@ -26,45 +26,40 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/anime.min.js"></script>
 
-    <title>VENT | Splash</title>
+    <title>VENT | Swipe</title>
 </head>
 
 <body>
-    <section id="splash">
-        <img class="splash-logo" src="assets/svg/vent.svg">
-        <div id="splash-center-container" class="">
-            <h1 id="splash-form-title"
-                class="title is-size-3-desktop is-size-4-touch is-family-secondary is-bold-700 has-text-white">Before we
-                begin...
-            </h1>
-            <div id="splash-form">
-                <form id="user-info">
-                    <div class="columns">
-                        <div class="column splash-form-column">
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="Name" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column splash-form-column">
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input" type="email" placeholder="Email Address" required>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                </form>
+    <section class="hero is-dark is-fullheight has-text-centered">
+        <div class="hero-head">Header</div>
+        <div class="hero-body">
+            <div class="container">
+                <p class="title" id="event-title">Event Title</p>
+                <p class="img-container">
+                    <img id="event-image" src="https://dummyimage.com/1920x1080/fff/aaa">
+                </p>
+                <div id="event-desc-container">
+                    <p id="event-datetime">Date/Time</p>
+                    <p id="event-location">Location</p>
+                </div>
+
             </div>
         </div>
-
+        <div class="hero-foot">
+            <div class="action-buttons">
+                <a class="button is-white is-huge" onclick="dislike()">
+                    <span class="icon is-medium"><i class="fas fa-times"></i></span>
+                </a>
+                <a class="button is-white is-huge" onclick="like()">
+                    <span class="icon is-medium"><i class="fas fa-thumbs-up"></i></span>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <script src="js/animation.js"></script>
+    <script src="js/eventController.js"></script>
 </body>
 
 </html>

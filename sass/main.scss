@@ -67,6 +67,7 @@ $footer-padding: 0;
 // ------------------------------------------------------
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass";
+@import '../node_modules/bulma-slider/dist/css/bulma-slider.sass'; // Bulma timeline extension
 // ------------------------------------------------------
 
 // Overwrite some rules for customization
@@ -293,4 +294,16 @@ html {
 
 #splash-form .input::placeholder {
     color: $one-light-blue !important;
+}
+
+output {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 5rem !important;
+}
+
+#splash-center-container button {
+    opacity: 0;
+    margin-top: 2rem;
 }

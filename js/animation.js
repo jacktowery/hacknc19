@@ -28,4 +28,9 @@ var animation = anime.timeline({
     duration: 500,
     delay: anime.stagger(200), // increase delay by 100ms for each elements.
     opacity: 1
-})
+}).add({
+    targets: '#splash-button',
+    easing: 'spring(1, 80, 10, 0)',
+    duration: 300,
+    opacity: 1
+});
