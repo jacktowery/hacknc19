@@ -26,14 +26,28 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 
-    <title>VENT | Swipe</title>
+    <title>VENT</title>
 </head>
 
 <body>
 
-    <section class="hero is-dark is-fullheight has-text-centered">
-        <div class="hero-head">Header</div>
+    <div id="loading-modal" class="modal is-active">
+        <div class="modal-background"></div>
+        <div class="modal-content has-text-white has-text-centered">
+            <p class="has-text-white is-size-3-desktop is-size-5-touch is-family-secondary is-bold-600">Hey, <span
+                    id="load-name" class="has-text-primary"></span>, we're finding events
+                near you</p>
+            <div id="load-progress"><progress class="progress is-primary" max="100"></progress></div>
+            <p class="is-size-7 has-text-grey-lighter">This will only take a second</p>
+        </div>
+    </div>
+
+    <section class="hero is-black is-fullheight has-text-centered">
+        <div class="hero-head">
+            <img id="main-logo" src="assets/svg/vent_color.svg">
+        </div>
         <div class="hero-body">
             <div class="container">
                 <p class="title" id="event-title">Event Title</p>
@@ -48,18 +62,30 @@
             </div>
         </div>
         <div class="hero-foot">
-            <div class="action-buttons">
-                <a class="button is-white is-huge" onclick="dislike()">
+            <div class="action-buttons flex-bottom">
+                <svg width="0" height="0">
+                    <linearGradient id="lg1" x1="200" x2="200" y2="334.01" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ff7059" />
+                        <stop offset="1" stop-color="#ff2e5c" />
+                    </linearGradient>
+                </svg>
+                <a class="button is-light is-outlined is-medium" onclick="">
+                    <span class="icon is-medium"><i class="fas fa-info"></i></span>
+                </a>
+                <a id="dislike" class="button is-white is-huge" onclick="dislike()">
                     <span class="icon is-medium"><i class="fas fa-times"></i></span>
                 </a>
-                <a class="button is-white is-huge" onclick="like()">
+                <a id="like" class="button is-white is-huge" onclick="like()">
                     <span class="icon is-medium"><i class="fas fa-thumbs-up"></i></span>
+                </a>
+                <a class="button is-light is-outlined is-medium" onclick="">
+                    <span class="icon is-medium"><i class="fas fa-envelope"></i></span>
                 </a>
             </div>
         </div>
     </section>
 
     <script src="js/eventController.js"></script>
-</body>
+    <script src="js/modal.js"></script>
 
 </html>

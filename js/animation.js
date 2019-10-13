@@ -15,7 +15,7 @@ var animation = anime.timeline({
     easing: 'easeInOutQuad',
     offset: '+=500',
     duration: 300,
-    top: '5%',
+    top: '10%',
     scale: 0.4
 }).add({
     targets: '#splash-form-title',
