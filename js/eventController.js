@@ -99,7 +99,7 @@ function like() {
     savedEvents.push([currentTitle, currentURL]);
     eventRight();
     eventFadeOut();
-    setTimeout(showNextEvent, 1500);
+    setTimeout(showNextEvent, 1000);
     //eventFadeIn();
     //save to profile
 }
@@ -107,7 +107,7 @@ function like() {
 function dislike() {
     eventLeft();
     eventFadeOut();
-    setTimeout(showNextEvent, 1500);
+    setTimeout(showNextEvent, 1000);
     //eventFadeIn();
 }
 
@@ -155,5 +155,8 @@ function sendEmail() {
         alert("You have not saved any events yet!");
     }
 }
+
+$("#event-container").on("swiperight", like);
+$("#event-container").on("swipeleft", dislike);
 
 showNextEvent();

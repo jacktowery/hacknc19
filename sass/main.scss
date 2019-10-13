@@ -174,9 +174,11 @@ a {
 // SCROLLBAR
 // ------------------------------------------------------
 
-html {
-    overflow: scroll;
-    overflow-x: hidden;
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -232,7 +234,7 @@ html {
 // ACTION BUTTONS
 // ------------------------------------------------------
 .action-buttons {
-    margin: 3em 0em;
+    margin: 3em 0em 6em 0em;
 }
 
 .action-buttons a.button {
@@ -361,4 +363,12 @@ output {
 #email-modal img {
     margin: 2rem 0;
     scale: 3;
+}
+
+// ------------------------------------------------------
+// EMAIL MODAL
+// ------------------------------------------------------
+
+.ui-loader {
+    display: none;
 }
