@@ -7351,6 +7351,11 @@ strong {
 a {
   transition: 0.3s; }
 
+html,
+body,
+head {
+  border: none !important; }
+
 .is-family-primary {
   letter-spacing: 0px; }
 

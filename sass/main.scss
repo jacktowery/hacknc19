@@ -108,6 +108,12 @@ a {
     transition: 0.3s;
 }
 
+html,
+body,
+head {
+    border: none !important;
+}
+
 // ------------------------------------------------------
 // TEXT & FONTS - SPACING, KERNING, WEIGHT, ETC
 // ------------------------------------------------------
