@@ -25,6 +25,12 @@ $one-darkest-blue: #0e1216;
 
 // COLORS
 //  initial variables
+
+$black: $one-darkest-blue;
+$grey-darker: $one-dark-blue;
+$grey-dark: $one-dark-blue;
+$grey: $one-med-blue;
+
 /*
 $black: $one-dark-blue;
 $grey-darker: $one-med-blue;
@@ -149,4 +155,87 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: $one-med-blue;
+}
+
+// ------------------------------------------------------
+// SCROLLBAR
+// ------------------------------------------------------
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+// ------------------------------------------------------
+// EVENT CARDS
+// ------------------------------------------------------
+
+#main {
+    position: relative;
+    height: calc(100vh);
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    @media screen and (min-width: 1088px) {
+        //desktop
+        width: 50%;
+    }
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+// ------------------------------------------------------
+// ACTION BUTTONS
+// ------------------------------------------------------
+.action-buttons {
+    margin: 3em 0em;
+}
+
+.action-buttons a.button {
+    border-radius: 100% !important;
+    margin-left: .25em;
+    margin-right: .25em;
+}
+
+.action-buttons a.button:hover {
+    //border-color: #fff !important;
+}
+
+.button.is-huge {
+    @media screen and (min-width: 1088px) {
+        //desktop
+        font-size: 2.5em;
+    }
+
+    //mobile
+    font-size: 2em;
 }

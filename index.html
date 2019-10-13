@@ -31,60 +31,35 @@
 </head>
 
 <body>
-    <div class="modal is-clipped is-active">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <header class="modal-card-head">
-                <p class="modal-card-title">Please register or login to continue!</p>
-            </header>
-            <section class="modal-card-body">
-                <div class="tabs is-centered">
-                    <ul>
-                        <li class="is-active"><a>Register</a></li>
-                        <li><a>Login</a></li>
-                    </ul>
+
+    <section class="hero is-dark is-fullheight has-text-centered">
+        <div class="hero-head">Header</div>
+        <div class="hero-body">
+            <div class="container">
+                <p class="title" id="event-title">Event Title</p>
+                <p class="img-container">
+                    <img id="event-image" src="https://dummyimage.com/1920x1080/fff/aaa">
+                </p>
+                <div id="event-desc-container">
+                    <p id="event-datetime">Date/Time</p>
+                    <p id="event-location">Location</p>
                 </div>
-                <form action="register.php" method="POST">
-                    <div class="field">
-                        <lable class="label">Username</lable>
-                        <div class="control has-icons-left">
-                            <input class="input" type="text" placeholder="" required>
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <lable class="label">Email Address</lable>
-                        <div class="control has-icons-left">
-                            <input class="input" type="text" placeholder="" required>
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-envelope"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <lable class="label">Password</lable>
-                        <div class="control has-icons-left">
-                            <input class="input" type="password" placeholder="" required>
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-lock"></i>
-                            </span>
-                        </div>
-                    </div>
-                </form>
-            </section>
-            <footer class="modal-card-foot has-text-centered">
-                <button class="button is-success">Register</button>
-            </footer>
 
-
-
-
+            </div>
         </div>
+        <div class="hero-foot">
+            <div class="action-buttons">
+                <a class="button is-white is-huge" onclick="dislike()">
+                    <span class="icon is-medium"><i class="fas fa-times"></i></span>
+                </a>
+                <a class="button is-white is-huge" onclick="like()">
+                    <span class="icon is-medium"><i class="fas fa-thumbs-up"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-
-
+    <script src="js/eventController.js"></script>
 </body>
 
 </html>
