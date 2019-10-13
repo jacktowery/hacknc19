@@ -41,7 +41,7 @@
                 begin...
             </h1>
             <div id="splash-form">
-                <form id="user-info">
+                <form id="user-info" action="app.html" onsubmit="processUserInfo()">
                     <div class="columns">
                         <div class="column splash-form-column">
                             <div class="field">
@@ -72,13 +72,13 @@
                     </div>
                 </form>
             </div>
-            <button id="splash-button" class="button is-primary" type="button" onclick="processUserInfo()">Let's
+            <button id="splash-button" class="button is-primary" type="submit" form="user-info">Let's
                 Go</button>
         </div>
 
     </section>
 
-    <script src="js/animation.js"></script>
+    <script src=" js/animation.js"> </script>
     <script src="js/slider.js"></script>
     <script src="js/processForm.js"></script>
 </body>
