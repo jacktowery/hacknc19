@@ -41,15 +41,11 @@ function showLocation(whereAmI) {
     console.log(latPos + ", " + longPos);
     latitude = latPos;
     longitude = longPos;
+    showNextEvent();
     //coordsDisplay.innerText = "Coordinates: (" + latPos + ", " + longPos + ")";
     //document.querySelector('#lat').value = latPos;
     //document.querySelector('#long').value = longPos;
 }
-
-setTimeout(function () {
-    getLocation();
-}, 500);
-
 
 // QUERY API
 function showNextEvent() {
@@ -159,4 +155,4 @@ function sendEmail() {
 $("#event-container").on("swiperight", like);
 $("#event-container").on("swipeleft", dislike);
 
-showNextEvent();
+getLocation();
